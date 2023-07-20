@@ -1,39 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Project from "../Project";
 
 function Portfolio() {
-
-  // Replace links with deployed projects and GitHub repos
   const [projects] = useState([
     {
-      name: 'surf-report',
-      description: 'MERN Stack',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: "Eventopia",
+      description:
+        "The application is deployed on Heroku and uses Node.js, Express, Sequelize, mySQL, bcryptjs and dotenv.",
+      link: "https://eventopia-ea333846024a.herokuapp.com/",
+      repo: "https://github.com/ElisaMarchete/Eventopia.git",
     },
     {
-      name: 'pastel-puzzels',
-      description: 'MERN Stack',
+      name: "pastel-puzzels",
+      description: "MERN Stack",
       link: "https://github.com",
-      repo: "https://github.com"
+      repo: "https://github.com",
     },
     {
-      name: 'run-buddy',
-      description: 'HTML/CSS',
+      name: "run-buddy",
+      description: "HTML/CSS",
       link: "https://github.com",
-      repo: "https://github.com"
+      repo: "https://github.com",
     },
     {
-      name: 'led-wall',
-      description: 'Node/IoT',
+      name: "led-wall",
+      description: "Node/IoT",
       link: "https://github.com",
-      repo: "https://github.com"
+      repo: "https://github.com",
     },
     {
-      name: 'calculator',
-      description: 'React/JavaScript/CSS',
+      name: "calculator",
+      description: "React/JavaScript/CSS",
       link: "https://github.com",
-      repo: "https://github.com"
+      repo: "https://github.com",
     },
   ]);
 
@@ -41,14 +40,11 @@ function Portfolio() {
     <div>
       <div className="flex-row">
         {projects.map((project, idx) => (
-          <Project
-            project={project}
-            key={"project" + idx}
-          />
+          <Project project={project} key={"project" + idx} />
         ))}
       </div>
     </div>
   );
-};
+}
 
 export default Portfolio;
