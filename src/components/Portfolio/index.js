@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Project from "../Project";
 
 function Portfolio() {
+  // Replace links with deployed projects and GitHub repos
   const [projects] = useState([
     {
       name: "Eventopia",
@@ -11,28 +12,37 @@ function Portfolio() {
       repo: "https://github.com/ElisaMarchete/Eventopia.git",
     },
     {
-      name: "pastel-puzzels",
-      description: "MERN Stack",
-      link: "https://github.com",
-      repo: "https://github.com",
+      name: "Memory Game",
+      description:
+        "The game uses HTML, CSS, JavaScript, Google fonts, Bulma CSS framework, and two server-side APIs: Pixabay and Official Joke.",
+      link: "https://angadbatth.github.io/memory-game/",
+      repo: "https://github.com/ElisaMarchete/memory-game.git",
     },
     {
-      name: "run-buddy",
+      name: "Tech Blog",
       description: "HTML/CSS",
-      link: "https://github.com",
-      repo: "https://github.com",
+      link: "https://angadbatth.github.io/memory-game/",
+      repo: "https://github.com/ElisaMarchete/memory-game.git",
     },
     {
-      name: "led-wall",
-      description: "Node/IoT",
-      link: "https://github.com",
-      repo: "https://github.com",
+      name: "Weather Dashboard",
+      description:
+        "The aplication uses HTML, CSS, JavaScript, OpenWeatherMap API, and Bootstrap.",
+      link: "https://elisamarchete.github.io/weather-dashboard/",
+      repo: "https://github.com/ElisaMarchete/weather-dashboard.git",
     },
     {
-      name: "calculator",
-      description: "React/JavaScript/CSS",
-      link: "https://github.com",
-      repo: "https://github.com",
+      name: "Note Taker",
+      description:
+        "This application uses HTML, CSS, JavaScript, and Express.js.",
+      link: "https://secret-fjord-28920.herokuapp.com/",
+      repo: "hhttps://github.com/ElisaMarchete/note-taker.git",
+    },
+    {
+      name: "Coding Quiz",
+      description: "The coding Quiz uses HTML, CSS, and JavaScript.",
+      link: "https://elisamarchete.github.io/code-quiz/",
+      repo: "https://github.com/ElisaMarchete/code-quiz.git",
     },
   ]);
 
