@@ -37,7 +37,7 @@ function Portfolio() {
       description:
         "This application uses HTML, CSS, JavaScript, and Express.js.",
       link: "https://secret-fjord-28920.herokuapp.com/",
-      repo: "hhttps://github.com/ElisaMarchete/note-taker.git",
+      repo: "https://github.com/ElisaMarchete/note-taker.git",
     },
     {
       name: "Coding Quiz",
