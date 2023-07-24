@@ -20,9 +20,10 @@ function Portfolio() {
     },
     {
       name: "Tech Blog",
-      description: "HTML/CSS",
-      link: "https://angadbatth.github.io/memory-game/",
-      repo: "https://github.com/ElisaMarchete/memory-game.git",
+      description:
+        "The blog has been developed using the following technologies: Handlebars, CSS, JavaScript, Bootstrap, Node.js, Express.js, MySQL, and Sequelize",
+      link: "https://lit-gorge-39686-8c8602a21f73.herokuapp.com/",
+      repo: "https://github.com/ElisaMarchete/tech-blog.git",
     },
     {
       name: "Weather Dashboard",

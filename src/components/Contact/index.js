@@ -1,47 +1,54 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail } from "../../utils/helpers";
 
 function Contact() {
   const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    phone: "", // Add phone number field
+    message: "",
   });
 
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
+  const [errorMessage, setErrorMessage] = useState("");
+  const { name, email, phone, message } = formState;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
-      console.log('Submit Form', formState);
+      console.log("Submit Form", formState);
     }
   };
 
   const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
+    if (e.target.name === "email") {
+      const isValidEmail = validateEmail(e.target.value);
+      if (!isValidEmail) {
+        setErrorMessage("Your email is invalid.");
       } else {
-        setErrorMessage('');
+        setErrorMessage("");
       }
+    } else if (e.target.name === "phone") {
+      // Add phone number validation if needed
     } else {
       if (!e.target.value.length) {
         setErrorMessage(`${e.target.name} is required.`);
       } else {
-        setErrorMessage('');
+        setErrorMessage("");
       }
     }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
+
+    setFormState({ ...formState, [e.target.name]: e.target.value });
+    console.log("Handle Form", formState);
   };
 
   return (
     <section>
+      <div>
+        <p>Phone: 647-555-555</p>
+        <p>Email: elisamarchete@gmail.com</p>
+      </div>
+
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -58,6 +65,15 @@ function Contact() {
             type="email"
             name="email"
             defaultValue={email}
+            onBlur={handleChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="phone">Phone number:</label>
+          <input
+            type="tel"
+            name="phone"
+            defaultValue={phone}
             onBlur={handleChange}
           />
         </div>
