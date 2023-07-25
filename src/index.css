@@ -157,6 +157,7 @@ input:focus {
 
 label {
   margin-right: 10px;
+  display: flex;
 }
 
 li {
@@ -365,17 +366,13 @@ textarea {
 .justified-text {
   text-align: justify;
   text-align-last: justify;
-  /* For additional support on some browsers */
 }
 
 .justified-text p {
   display: inline-block;
-  /* Ensures each word is treated as an individual block */
-  /* white-space: pre-wrap; */
-  /* Preserves white space and line breaks */
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 2200px) {
   nav {
     position: static;
     display: block;
@@ -387,6 +384,32 @@ textarea {
   header h1 {
     display: block;
     height: 30px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  nav {
+    position: static;
+    display: block;
+    z-index: 100;
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    display: block;
+    height: 30px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
   }
 }
 
@@ -410,7 +433,8 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 425px) {
+
+@media only screen and (max-width: 480px) {
   nav {
     position: static;
     display: block;

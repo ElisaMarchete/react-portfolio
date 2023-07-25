@@ -18,9 +18,8 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
-  console.log(currentPage);
+  // console.log(currentPage);
   return (
-    // <ComponentTest />
     <div>
       <Header>
         <Nav
