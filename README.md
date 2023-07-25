@@ -39,4 +39,4 @@ This project is licensed under the MIT license.
 ![Screenshot of deployed application](./src/assets/screenshot/3.png)
 ![Screenshot of deployed application](./src/assets/screenshot/4.png)
 
-[Link deployed application](https://lit-gorge-39686-8c8602a21f73.herokuapp.com/)
+[Link deployed application](https://elisamarchete.github.io/react-portfolio/)
