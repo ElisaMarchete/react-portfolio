@@ -33,3 +33,10 @@ To access the portfolio, simply click on the link above in the live demo section
 This project is licensed under the MIT license.
 
 ## Screenshot and URL of the deployed application
+
+![Screenshot of deployed application](./src/assets/screenshot/1.png)
+![Screenshot of deployed application](./src/assets/screenshot/2.png)
+![Screenshot of deployed application](./src/assets/screenshot/3.png)
+![Screenshot of deployed application](./src/assets/screenshot/4.png)
+
+[Link deployed application](https://lit-gorge-39686-8c8602a21f73.herokuapp.com/)
