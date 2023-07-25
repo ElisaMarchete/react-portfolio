@@ -6,7 +6,7 @@ function Header(props) {
     <header className="flex-row space-between px-1">
       <h1>Elisa Marchete</h1>
       <img src={coverImage} alt="wooden background"></img>
-      {props.children}
+      {props.children} {/* NAV COMPONENT */}
     </header>
   );
 }

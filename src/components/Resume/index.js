@@ -6,7 +6,13 @@ function Resume() {
       <div className="my-2">
         <p>
           Download my{" "}
-          <a href="https://www.linkedin.com/in/elisa-marchete">resume</a>
+          <a
+            href={process.env.PUBLIC_URL + "/elisamarchete.pdf"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
         </p>
         <h3>Front-end Proficiencies</h3>
         <ul className="skills">
