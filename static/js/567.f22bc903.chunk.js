@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_portfolio=self.webpackChunkreact_portfolio||[]).push([[567],{567:function(e,t,a){e.exports=a.p+"static/media/Memory Game.4a9df684dce2ecab186b.jpg"}}]);

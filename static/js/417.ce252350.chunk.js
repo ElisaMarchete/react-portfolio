@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_portfolio=self.webpackChunkreact_portfolio||[]).push([[417],{417:function(e,t,o){e.exports=o.p+"static/media/Tech Blog.7e6045dd52b8d07af328.jpg"}}]);
